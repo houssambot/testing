@@ -1,0 +1,39 @@
+<?php
+require 'connexion.php';
+?>
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register Form</title>
+  </head>
+  <body>
+    <div class="form div class">
+      <form action="register.php" method="post" class="loginform">
+        <div>
+          <h1 class="logintitle">Register Form</h1>
+        </div>
+        <div class="usernameclass">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            name="username"
+            id="username"
+            placeholder="nom d'utiilisateur"
+          />
+        </div>
+        <div class="passwordclass">
+          <label for="pass">password</label>
+          <input type="text" name="pass" id="pass" placeholder="mot de pass" />
+        </div>
+        <div>
+          <button type="submit">Register</button>
+          <div>
+            <p>Already have an account? <a href="index.php">Login here</a></p>
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>
